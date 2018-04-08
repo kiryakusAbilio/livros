@@ -1,0 +1,12 @@
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\BookStore.Infra.dll.config
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\BookStore.Infra.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\BookStore.Infra.pdb
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\BookStore.Domain.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\EntityFramework.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\BookStore.Domain.pdb
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\EntityFramework.xml
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\obj\Debug\BookStore.Infra.csprojResolveAssemblyReference.cache
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\obj\Debug\BookStore.Infra.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Infra\obj\Debug\BookStore.Infra.pdb
