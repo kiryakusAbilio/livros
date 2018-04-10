@@ -12,12 +12,6 @@ app.controller('indexCtrl', function($scope, $http){
 	}
 
 	$scope.categories= [{
-		id: 1,
-		title: 'Ação'
-	}, 
-	{
-		id: 2,
-		label: 'Aventura',
 	}];
 	
 	$scope.selectedCategory = {};
@@ -41,20 +35,22 @@ app.controller('indexCtrl', function($scope, $http){
 	 	}
 	 }
 
-	 $scope.save = function (){
-	 	console.log("$scope.selectedCategory",$scope.selectedCategory);
-	 	$scope.model.categoryid = $scope.selectedCategory;
+	 $scope.save = function (){	 	
+	 	console.log("$scope.model",$scope.model.categoryid);
+
+	 	$scope.model.isactive = 1;
+	 	console.log("$scope.model",$scope.model);
 	 	if($scope.model.id) {
-	 		$http.put($scope.apiBaseURL + 'category/' + $scope.model.id, $scope.model).then(function(resp){
+	 		$http.put($scope.apiBaseURL + 'book/' + $scope.model.id, $scope.model).then(function(resp){
 
 	 			clearModel();
 
 	 		})  
 	 	} else {
-	 		$http.post($scope.apiBaseURL + 'categories', $scope.model).then(function(resp){
-	 			
+	 		$http.post($scope.apiBaseURL + 'books', $scope.model).then(function(resp){
+
 	 			$scope.items.push(resp);
-	 			
+
 	 			clearModel();
 
 	 		})
@@ -66,7 +62,7 @@ app.controller('indexCtrl', function($scope, $http){
 	 }
 
 	 $scope.delete = function(id) {
-	 	$http.delete($scope.apiBaseURL + 'category/' + id).then(function(resp){
+	 	$http.delete($scope.apiBaseURL + 'book/' + id).then(function(resp){
 
 	 		var item = getItem(id);
 	 		if(item) {
@@ -77,13 +73,18 @@ app.controller('indexCtrl', function($scope, $http){
 	 }
 
 	 $scope.getItems = function() {  
-	 	$http.get($scope.apiBaseURL + 'categories').then(function(resp){
+	 	$http.get($scope.apiBaseURL + 'books').then(function(resp){
 
 	 		$scope.items = resp.data;
 	 	})
 	 }
+	 $scope.getCategories = function(){
+	 	$http.get($scope.apiBaseURL + 'categories').then(function(resp){
 
-
+	 		$scope.categories = resp.data;
+	 	})
+	 }
+	 $scope.getCategories();
 	 $scope.getItems();
 
 	})

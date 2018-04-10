@@ -15,25 +15,29 @@
             <form>
                 <div class="form-group">
                     <label for="" class="control-label">Title</label>
-                    <input type="text" class="form-control" ng-model="model.title">
+                    <input type="text" class="form-control" required="true" ng-model="model.title">
                     <label for="" class="control-label">Price</label>
-                    <input type="text" class="form-control" ng-model="model.price">
-                    <label for="" class="control-label">Active</label>
-                    <input type="text" class="form-control" ng-model="model.isactive">
+                    <input type="number" name="currency" min="1" max="9999" size="4"  class="form-control" ng-model="model.price">   
+                    <label>
+                        <input type="radio" ng-model="mode.isactive"  value="1">
+                        Active
+                    </label>
+                    <label>
+                        <input type="radio" ng-model="mode.isactive" value="0">
+                        Inactive
+                    </label><br/>
                     <div class="form-group">
                       <label for="exampleSelect1">Categorys</label>   
-                      <select ng-model="selectCategory">
-                        <option value="1">Ação</option>
-                       <option value="2">Aventura</option>
-                       <option value="3">História</option>
-                       <option value="4">Música</option>
-                   </select> 
-                   <!--select ng-model="selectCategory" ng-options="category as categories.title for category in categories track by category.id"></select>-->
-               </div>
-           </div>
-           <button class="btn btn-success" ng-click="save()" ng-disabled="!model.title">Save</button>
-       </form>
-   </div>
+                      <select class="form-control" 
+                      ng-model="model.categoryid" 
+                      ng-options="category.id as category.title for category in categories track by category.id">               
+                  </select>
+                     
+                </div>
+            </div>
+            <button class="btn btn-success" ng-click="save()" ng-disabled="!model.title">Save</button>
+        </form>
+    </div>
 </div>
 
 <div class="row">
