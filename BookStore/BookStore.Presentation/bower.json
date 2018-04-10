@@ -1,0 +1,23 @@
+{
+  "name": "angularjscrud",
+  "authors": [
+    "Cristiano Sarmento <cristiano.sarmento@zoox.com.br>"
+  ],
+  "description": "",
+  "main": "index.html",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "1.6.9",
+    "bootstrap": "^4.0.0",
+    "underscore": "^1.8.3"
+  }
+}
