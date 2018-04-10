@@ -1,54 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<title></title>
-	<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
 <body ng-app="angularjscrud" ng-controller="indexCtrl">
-	<script src="bower_components/angular/angular.min.js"></script>
-	<script src="bower_components/underscore/underscore-min.js"></script>
-	<script src="js/app.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/underscore/underscore-min.js"></script>
+    <script src="js/app.js"></script>
 
-	<div class="row">
-		<div class="col col-lg-12">
-			<form>
-				<div class="form-group">
-					<label for="" class="control-label">Name</label>
-					<input type="text" class="form-control" ng-model="model.name">
-				</div>
-				<button class="btn btn-success" ng-click="save()" ng-disabled="!model.name">Save</button>
-			</form>
-		</div>
-	</div>
-	
-	<div class="row">
-		<div class="col col-lg-12">
-			<table class="table table-striped">
-				<thead>
-					<th>Name</th>
-					<th></th>
-					<th></th>
-				</thead>
-				<tbody>
-					<tr ng-repeat="item in items">
-						<td>{{ item.name }}</td>	
-						<td>
-							<button class="btn btn-info" ng-click="edit(item.id)">
-								Edit
-							</button>
-						</td>
-						<td>
-							<button class="btn btn-danger" ng-click="delete(item.id)">
-								Delete
-							</button>
-						</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
-	
-	
+    <div class="row">
+        <div class="col col-lg-12">
+            <form>
+                <div class="form-group">
+                    <label for="" class="control-label">Title</label>
+                    <input type="text" class="form-control" ng-model="model.title">
+                    <label for="" class="control-label">Price</label>
+                    <input type="text" class="form-control" ng-model="model.price">
+                    <label for="" class="control-label">Active</label>
+                    <input type="text" class="form-control" ng-model="model.isactive">
+                    <div class="form-group">
+                      <label for="exampleSelect1">Categorys</label>   
+                      <select ng-model="selectCategory">
+                        <option value="1">Ação</option>
+                       <option value="2">Aventura</option>
+                       <option value="3">História</option>
+                       <option value="4">Música</option>
+                   </select> 
+                   <!--select ng-model="selectCategory" ng-options="category as categories.title for category in categories track by category.id"></select>-->
+               </div>
+           </div>
+           <button class="btn btn-success" ng-click="save()" ng-disabled="!model.title">Save</button>
+       </form>
+   </div>
+</div>
+
+<div class="row">
+    <div class="col col-lg-12">
+        <table class="table table-striped">
+            <thead>
+                <th>Id</th>
+                <th>Title</th>
+                <th>Acquire Date</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in items">
+                    <td>{{ item.id }}</td>  
+                    <td>{{ item.title }}</td>   
+                    <td>{{ item.acquireDate }}</td> 
+                    <td>
+                        <button class="btn btn-info" ng-click="edit(item)">
+                            Edit
+                        </button>
+                    </td>
+                    <td>
+                        <button class="btn btn-danger" ng-click="delete(item.id)">
+                            Delete
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
 </body>
 </html>

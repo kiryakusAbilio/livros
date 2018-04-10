@@ -7,9 +7,11 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 
 namespace BookStore.Api.Controllers
 {
+    [EnableCors(origins: "*", headers: "*", methods: "*")]
     [RoutePrefix("api/v1/public")]
     public class CategoryController : ApiController
     {
@@ -36,7 +38,7 @@ namespace BookStore.Api.Controllers
         }
 
         [HttpPut]
-        [Route("category/{categoryId}/{category}")]
+        [Route("category/{categoryId}")]
         public HttpResponseMessage PutCategory(int categoryId, Category category)
         {
             if (!ModelState.IsValid)

@@ -1,0 +1,5 @@
+C:\Users\fabio\source\repos\BookStore\BookStore.Api.Test\bin\Debug\BookStore.Api.Test.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Api.Test\bin\Debug\BookStore.Api.Test.pdb
+C:\Users\fabio\source\repos\BookStore\BookStore.Api.Test\obj\Debug\BookStore.Api.Test.csprojResolveAssemblyReference.cache
+C:\Users\fabio\source\repos\BookStore\BookStore.Api.Test\obj\Debug\BookStore.Api.Test.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Api.Test\obj\Debug\BookStore.Api.Test.pdb

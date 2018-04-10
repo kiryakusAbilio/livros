@@ -1,4 +1,5 @@
 C:\Users\fabio\source\repos\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Domain\bin\Debug\BookStore.Domain.pdb
+C:\Users\fabio\source\repos\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.csprojResolveAssemblyReference.cache
 C:\Users\fabio\source\repos\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Domain\obj\Debug\BookStore.Domain.pdb

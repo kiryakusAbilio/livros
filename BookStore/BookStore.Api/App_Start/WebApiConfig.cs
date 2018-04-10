@@ -16,6 +16,7 @@ namespace BookStore.Api
             config.Formatters.Remove(config.Formatters.XmlFormatter);
             settings.Formatting = Newtonsoft.Json.Formatting.Indented;
             settings.ContractResolver = new CamelCasePropertyNamesContractResolver();
+            config.EnableCors();
             // Web API routes
             config.MapHttpAttributeRoutes();
 

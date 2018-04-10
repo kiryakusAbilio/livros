@@ -9,7 +9,9 @@ C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\EntityFramework.SqlServe
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\Newtonsoft.Json.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Net.Http.Formatting.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Cors.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Helpers.dll
+C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Http.Cors.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Http.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Http.WebHost.dll
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Mvc.dll
@@ -23,10 +25,11 @@ C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\BookStore.Domain.pdb
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\BookStore.Infra.pdb
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\EntityFramework.xml
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\EntityFramework.SqlServer.xml
-C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\Newtonsoft.Json.xml
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Net.Http.Formatting.xml
-C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Helpers.xml
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Http.xml
+C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Http.Cors.xml
+C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\Newtonsoft.Json.xml
+C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Helpers.xml
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Http.WebHost.xml
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Mvc.xml
 C:\Users\fabio\source\repos\BookStore\BookStore.Api\bin\System.Web.Optimization.xml
